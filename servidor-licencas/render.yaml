@@ -1,7 +1,0 @@
-﻿services:
-  - type: web
-    name: servidor-licencas
-    env: python
-    plan: free
-    buildCommand: ""
-    startCommand: gunicorn server:app

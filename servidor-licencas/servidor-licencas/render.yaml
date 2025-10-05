@@ -1,7 +1,0 @@
-﻿services:
-  - type: web
-    name: servidor-licencas
-    env: python
-    buildCommand: "pip install -r servidor-licencas/requirements.txt"
-    startCommand: "cd servidor-licencas && gunicorn --workers 3 --bind 0.0.0.0:5000 server_app:app"
-    plan: free
