@@ -1,4 +1,4 @@
-﻿services:
+services:
   - type: web
     name: servidor-licencas
     env: python
