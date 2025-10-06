@@ -1,0 +1,9 @@
+# render.yaml
+
+services:
+  - type: web
+    name: servidor-licencas
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn --bind 0.0.0.0:10000 server_app:app"
+    plan: free
